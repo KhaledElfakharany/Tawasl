@@ -1,0 +1,6 @@
+framework module Pods_Tawasl {
+  umbrella header "Pods-Tawasl-umbrella.h"
+
+  export *
+  module * { export * }
+}

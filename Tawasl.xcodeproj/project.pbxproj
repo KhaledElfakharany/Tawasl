@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		95240E891EB2171B00883C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E881EB2171B00883C31 /* AppDelegate.swift */; };
-		95240E8B1EB2171B00883C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E8A1EB2171B00883C31 /* ViewController.swift */; };
+		95240E8B1EB2171B00883C31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E8A1EB2171B00883C31 /* SignInVC.swift */; };
 		95240E8E1EB2171B00883C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95240E8C1EB2171B00883C31 /* Main.storyboard */; };
 		95240E901EB2171B00883C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95240E8F1EB2171B00883C31 /* Assets.xcassets */; };
 		95240E931EB2171B00883C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95240E911EB2171B00883C31 /* LaunchScreen.storyboard */; };
 		95240E9E1EB2171B00883C31 /* TawaslTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E9D1EB2171B00883C31 /* TawaslTests.swift */; };
+		95240EA91EB217BA00883C31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95240EA81EB217BA00883C31 /* GoogleService-Info.plist */; };
+		F4851DCA4EA47362ABBCD6E1 /* Pods_Tawasl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0DEFE4A2D9B83E59771849 /* Pods_Tawasl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2182633F175716C7175762C0 /* Pods-Tawasl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawasl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tawasl/Pods-Tawasl.debug.xcconfig"; sourceTree = "<group>"; };
+		51E0F907CC9004BE2E4A6CB8 /* Pods-Tawasl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawasl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tawasl/Pods-Tawasl.release.xcconfig"; sourceTree = "<group>"; };
+		6D0DEFE4A2D9B83E59771849 /* Pods_Tawasl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tawasl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95240E851EB2171B00883C31 /* Tawasl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tawasl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95240E881EB2171B00883C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95240E8A1EB2171B00883C31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95240E8A1EB2171B00883C31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		95240E8D1EB2171B00883C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95240E8F1EB2171B00883C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95240E921EB2171B00883C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		95240E991EB2171B00883C31 /* TawaslTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawaslTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95240E9D1EB2171B00883C31 /* TawaslTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawaslTests.swift; sourceTree = "<group>"; };
 		95240E9F1EB2171B00883C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95240EA81EB217BA00883C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4851DCA4EA47362ABBCD6E1 /* Pods_Tawasl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,8 @@
 				95240E871EB2171B00883C31 /* Tawasl */,
 				95240E9C1EB2171B00883C31 /* TawaslTests */,
 				95240E861EB2171B00883C31 /* Products */,
+				DA3F87BB4AF733CEA9AE7DBA /* Pods */,
+				D9C3888202FDA522E6D57F21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +86,11 @@
 		95240E871EB2171B00883C31 /* Tawasl */ = {
 			isa = PBXGroup;
 			children = (
-				95240E881EB2171B00883C31 /* AppDelegate.swift */,
-				95240E8A1EB2171B00883C31 /* ViewController.swift */,
-				95240E8C1EB2171B00883C31 /* Main.storyboard */,
-				95240E8F1EB2171B00883C31 /* Assets.xcassets */,
-				95240E911EB2171B00883C31 /* LaunchScreen.storyboard */,
-				95240E941EB2171B00883C31 /* Info.plist */,
+				9552F9F71EB220F900E26D93 /* Utilities */,
+				9552F9F61EB220BE00E26D93 /* Resources */,
+				9552F9F51EB220A400E26D93 /* Model */,
+				9552F9F41EB2209D00E26D93 /* View */,
+				9552F9F31EB2209600E26D93 /* Controller */,
 			);
 			path = Tawasl;
 			sourceTree = "<group>";
@@ -96,6 +104,65 @@
 			path = TawaslTests;
 			sourceTree = "<group>";
 		};
+		9552F9F31EB2209600E26D93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95240E8A1EB2171B00883C31 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9552F9F41EB2209D00E26D93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95240E911EB2171B00883C31 /* LaunchScreen.storyboard */,
+				95240E8C1EB2171B00883C31 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9552F9F51EB220A400E26D93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95240E881EB2171B00883C31 /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9552F9F61EB220BE00E26D93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95240E8F1EB2171B00883C31 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9552F9F71EB220F900E26D93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				95240EA81EB217BA00883C31 /* GoogleService-Info.plist */,
+				95240E941EB2171B00883C31 /* Info.plist */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D9C3888202FDA522E6D57F21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DEFE4A2D9B83E59771849 /* Pods_Tawasl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA3F87BB4AF733CEA9AE7DBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2182633F175716C7175762C0 /* Pods-Tawasl.debug.xcconfig */,
+				51E0F907CC9004BE2E4A6CB8 /* Pods-Tawasl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95240EA21EB2171B00883C31 /* Build configuration list for PBXNativeTarget "Tawasl" */;
 			buildPhases = (
+				4E812A4637A6F77D39D4452D /* [CP] Check Pods Manifest.lock */,
 				95240E811EB2171B00883C31 /* Sources */,
 				95240E821EB2171B00883C31 /* Frameworks */,
 				95240E831EB2171B00883C31 /* Resources */,
+				EC93CC37E48CD82C04C368E5 /* [CP] Embed Pods Frameworks */,
+				4C9F13E680404CA138E7B365 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95240E931EB2171B00883C31 /* LaunchScreen.storyboard in Resources */,
+				95240EA91EB217BA00883C31 /* GoogleService-Info.plist in Resources */,
 				95240E901EB2171B00883C31 /* Assets.xcassets in Resources */,
 				95240E8E1EB2171B00883C31 /* Main.storyboard in Resources */,
 			);
@@ -194,12 +265,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C9F13E680404CA138E7B365 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tawasl/Pods-Tawasl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E812A4637A6F77D39D4452D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC93CC37E48CD82C04C368E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tawasl/Pods-Tawasl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95240E811EB2171B00883C31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95240E8B1EB2171B00883C31 /* ViewController.swift in Sources */,
+				95240E8B1EB2171B00883C31 /* SignInVC.swift in Sources */,
 				95240E891EB2171B00883C31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +458,7 @@
 		};
 		95240EA31EB2171B00883C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2182633F175716C7175762C0 /* Pods-Tawasl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tawasl/Info.plist;
@@ -351,6 +471,7 @@
 		};
 		95240EA41EB2171B00883C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E0F907CC9004BE2E4A6CB8 /* Pods-Tawasl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tawasl/Info.plist;
@@ -408,6 +529,7 @@
 				95240EA41EB2171B00883C31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95240EA51EB2171B00883C31 /* Build configuration list for PBXNativeTarget "TawaslTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +538,7 @@
 				95240EA71EB2171B00883C31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

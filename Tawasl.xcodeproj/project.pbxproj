@@ -14,6 +14,11 @@
 		95240E931EB2171B00883C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95240E911EB2171B00883C31 /* LaunchScreen.storyboard */; };
 		95240E9E1EB2171B00883C31 /* TawaslTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E9D1EB2171B00883C31 /* TawaslTests.swift */; };
 		95240EA91EB217BA00883C31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95240EA81EB217BA00883C31 /* GoogleService-Info.plist */; };
+		9552F9F91EB22F1300E26D93 /* ViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9F81EB22F1300E26D93 /* ViewShadow.swift */; };
+		9552F9FE1EB232B100E26D93 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9FD1EB232B100E26D93 /* DropShadow.swift */; };
+		9552FA001EB236D300E26D93 /* Ristella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9552F9FF1EB236D300E26D93 /* Ristella.ttf */; };
+		9552FA021EB23BAE00E26D93 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552FA011EB23BAE00E26D93 /* RoundedButton.swift */; };
+		9552FA041EB27C8D00E26D93 /* SmallRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552FA031EB27C8D00E26D93 /* SmallRoundedButton.swift */; };
 		F4851DCA4EA47362ABBCD6E1 /* Pods_Tawasl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0DEFE4A2D9B83E59771849 /* Pods_Tawasl.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,11 @@
 		95240E9D1EB2171B00883C31 /* TawaslTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawaslTests.swift; sourceTree = "<group>"; };
 		95240E9F1EB2171B00883C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95240EA81EB217BA00883C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9552F9F81EB22F1300E26D93 /* ViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShadow.swift; sourceTree = "<group>"; };
+		9552F9FD1EB232B100E26D93 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		9552F9FF1EB236D300E26D93 /* Ristella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ristella.ttf; sourceTree = "<group>"; };
+		9552FA011EB23BAE00E26D93 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		9552FA031EB27C8D00E26D93 /* SmallRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallRoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 		95240E871EB2171B00883C31 /* Tawasl */ = {
 			isa = PBXGroup;
 			children = (
+				9552F9FA1EB230DE00E26D93 /* Protocols */,
 				9552F9F71EB220F900E26D93 /* Utilities */,
 				9552F9F61EB220BE00E26D93 /* Resources */,
 				9552F9F51EB220A400E26D93 /* Model */,
@@ -107,6 +118,7 @@
 		9552F9F31EB2209600E26D93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95240E881EB2171B00883C31 /* AppDelegate.swift */,
 				95240E8A1EB2171B00883C31 /* SignInVC.swift */,
 			);
 			name = Controller;
@@ -117,6 +129,9 @@
 			children = (
 				95240E911EB2171B00883C31 /* LaunchScreen.storyboard */,
 				95240E8C1EB2171B00883C31 /* Main.storyboard */,
+				9552F9F81EB22F1300E26D93 /* ViewShadow.swift */,
+				9552FA011EB23BAE00E26D93 /* RoundedButton.swift */,
+				9552FA031EB27C8D00E26D93 /* SmallRoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,7 +139,6 @@
 		9552F9F51EB220A400E26D93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				95240E881EB2171B00883C31 /* AppDelegate.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -132,6 +146,7 @@
 		9552F9F61EB220BE00E26D93 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9552F9FF1EB236D300E26D93 /* Ristella.ttf */,
 				95240E8F1EB2171B00883C31 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -144,6 +159,14 @@
 				95240E941EB2171B00883C31 /* Info.plist */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		9552F9FA1EB230DE00E26D93 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9552F9FD1EB232B100E26D93 /* DropShadow.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		D9C3888202FDA522E6D57F21 /* Frameworks */ = {
@@ -251,6 +274,7 @@
 			files = (
 				95240E931EB2171B00883C31 /* LaunchScreen.storyboard in Resources */,
 				95240EA91EB217BA00883C31 /* GoogleService-Info.plist in Resources */,
+				9552FA001EB236D300E26D93 /* Ristella.ttf in Resources */,
 				95240E901EB2171B00883C31 /* Assets.xcassets in Resources */,
 				95240E8E1EB2171B00883C31 /* Main.storyboard in Resources */,
 			);
@@ -319,7 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95240E8B1EB2171B00883C31 /* SignInVC.swift in Sources */,
+				9552FA021EB23BAE00E26D93 /* RoundedButton.swift in Sources */,
 				95240E891EB2171B00883C31 /* AppDelegate.swift in Sources */,
+				9552FA041EB27C8D00E26D93 /* SmallRoundedButton.swift in Sources */,
+				9552F9FE1EB232B100E26D93 /* DropShadow.swift in Sources */,
+				9552F9F91EB22F1300E26D93 /* ViewShadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

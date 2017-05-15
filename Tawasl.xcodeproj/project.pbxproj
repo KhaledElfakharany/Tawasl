@@ -47,6 +47,7 @@
 		95240E9D1EB2171B00883C31 /* TawaslTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawaslTests.swift; sourceTree = "<group>"; };
 		95240E9F1EB2171B00883C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95240EA81EB217BA00883C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		954591201EC9F6C000029F39 /* Tawasl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tawasl.entitlements; sourceTree = "<group>"; };
 		9552F9F81EB22F1300E26D93 /* ViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShadow.swift; sourceTree = "<group>"; };
 		9552F9FD1EB232B100E26D93 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		9552F9FF1EB236D300E26D93 /* Ristella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ristella.ttf; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		95240E871EB2171B00883C31 /* Tawasl */ = {
 			isa = PBXGroup;
 			children = (
+				954591201EC9F6C000029F39 /* Tawasl.entitlements */,
 				9552F9FA1EB230DE00E26D93 /* Protocols */,
 				9552F9F71EB220F900E26D93 /* Utilities */,
 				9552F9F61EB220BE00E26D93 /* Resources */,
@@ -239,7 +241,13 @@
 				TargetAttributes = {
 					95240E841EB2171B00883C31 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = K7K283J3YP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					95240E981EB2171B00883C31 = {
 						CreatedOnToolsVersion = 8.3;
@@ -489,6 +497,7 @@
 			baseConfigurationReference = 2182633F175716C7175762C0 /* Pods-Tawasl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K7K283J3YP;
 				INFOPLIST_FILE = Tawasl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.Tawasl;
@@ -502,6 +511,7 @@
 			baseConfigurationReference = 51E0F907CC9004BE2E4A6CB8 /* Pods-Tawasl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K7K283J3YP;
 				INFOPLIST_FILE = Tawasl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.Tawasl;

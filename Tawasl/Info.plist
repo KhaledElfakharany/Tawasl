@@ -45,5 +45,28 @@
 	<array>
 		<string>Ristella.ttf</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb449633215428981</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>449633215428981</string>
+    <key>FacebookDisplayName</key>
+    <string>Tawasl</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>{human-readable reason for photo access}</string>
+    
 </dict>
 </plist>

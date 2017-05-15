@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>005 Quiz</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 5, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 1100844, "assessment_type": "multiple-choice", "created": "2016-11-14T18:44:51Z", "prompt": {"question": "<p>Passport is an ______ package.</p>", "feedbacks": ["", "", "", ""], "answers": ["<p>NPM</p>", "<p>NVM</p>", "<p>JSON</p>", "<p>Mongo</p>"], "relatedLectureIds": ""}, "correct_response": ["a"], "updated": "2016-11-14T18:44:51Z", "section": "", "question_plain": "Passport is an ______ package.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100846, "assessment_type": "multiple-choice", "created": "2016-11-14T18:45:54Z", "prompt": {"question": "<p>Passport has plugins to support ______ authentication.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>Local (email and password)</p>", "<p>Google</p>", "<p>Facebook</p>", "<p>All of the above plus many more</p>"]}, "correct_response": ["d"], "updated": "2016-11-14T18:45:54Z", "section": "", "question_plain": "Passport has plugins to support ______ authentication.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100850, "assessment_type": "multiple-choice", "created": "2016-11-14T18:46:55Z", "prompt": {"question": "<p>JWT stands for _________________.</p>", "feedbacks": ["", "", "", ""], "answers": ["<p>Java Web Terminal</p>", "<p>JSON Web Token</p>", "<p>Java Worker Tools</p>", "<p>JSON With Token</p>"], "relatedLectureIds": ""}, "correct_response": ["b"], "updated": "2016-11-14T18:46:55Z", "section": "", "question_plain": "JWT stands for _________________.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100852, "assessment_type": "multiple-choice", "created": "2016-11-14T18:47:51Z", "prompt": {"question": "<p>JSON Web Tokens are all valid for exactly _____ days.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>30</p>", "<p>15</p>", "<p>10</p>", "<p>They vary according to how you set them up</p>"]}, "correct_response": ["d"], "updated": "2016-11-14T18:47:51Z", "section": "", "question_plain": "JSON Web Tokens are all valid for exactly _____ days.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100854, "assessment_type": "multiple-choice", "created": "2016-11-14T18:48:42Z", "prompt": {"question": "<p>Express routes are locked down via _________.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>Authentication middleware</p>", "<p>A physical lock</p>", "<p>File locking in the Database</p>", "<p>Express routes must be open</p>"]}, "correct_response": ["a"], "updated": "2016-11-14T18:48:42Z", "section": "", "question_plain": "Express routes are locked down via _________.", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>004 Quiz</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 5, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 1100822, "assessment_type": "multiple-choice", "created": "2016-11-14T18:38:07Z", "prompt": {"question": "<p>MongoDB:</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>Stores data in a JSON like structure</p>", "<p>Where each element in the data is called a document</p>", "<p>Documents are stored in a collection</p>", "<p>All of the above</p>"]}, "correct_response": ["d"], "updated": "2016-11-14T18:38:07Z", "section": "", "question_plain": "MongoDB:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100824, "assessment_type": "multiple-choice", "created": "2016-11-14T18:38:58Z", "prompt": {"question": "<p>To send data to the server in a request, you use a _____ request.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>POST</p>", "<p>GET</p>", "<p>SEND</p>", "<p>DELETE</p>"]}, "correct_response": ["a"], "updated": "2016-11-14T18:38:58Z", "section": "", "question_plain": "To send data to the server in a request, you use a _____ request.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100828, "assessment_type": "multiple-choice", "created": "2016-11-14T18:40:16Z", "prompt": {"question": "<p>Updating existing data is best handled with an Express Router ______ call.</p>", "answers": ["<p><code>.delete</code></p>", "<p><code>.get</code>\u00a0</p>", "<p><code>.put</code>\u00a0</p>", "<p><code>.all</code>\u00a0</p>"], "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:40:16Z", "section": "", "question_plain": "Updating existing data is best handled with an Express Router ______ call.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100832, "assessment_type": "multiple-choice", "created": "2016-11-14T18:41:45Z", "prompt": {"question": "<p>CRUD stands for _____.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>It is an expression suggesting frustration.</p>", "<p>Create, Read, Update and Delete</p>", "<p>Create, Reuse, Upload and Destroy</p>", "<p>None of the above</p>"]}, "correct_response": ["b"], "updated": "2016-11-14T18:41:45Z", "section": "", "question_plain": "CRUD stands for _____.", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100838, "assessment_type": "multiple-choice", "created": "2016-11-14T18:42:57Z", "prompt": {"question": "<p>RESTful APIs expose data as _______.</p>", "relatedLectureIds": "", "feedbacks": ["", "", "", ""], "answers": ["<p>Sockets</p>", "<p>Ports</p>", "<p>Dongles</p>", "<p>Endpoints or urls</p>"]}, "correct_response": ["d"], "updated": "2016-11-14T18:42:57Z", "section": "", "question_plain": "RESTful APIs expose data as _______.", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

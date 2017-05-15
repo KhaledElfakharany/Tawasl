@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>033 Exercise</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Exercise - Extending our API further</p>
+
+
+
+
+
+<p>Requirements</p>
+
+
+
+
+
+
+
+<p>Building on our Food Truck API, add a new route at the end of our controller to retrieve all Food Trucks which serve a certain foodtype. (You will need to add some food trucks in your database so you will have some data).</p>
+
+
+
+
+
+
+
+<p>1. Add a new api.get call to ‘/v1/foodtruck/foodtype/:foodtype’.</p>
+
+
+
+
+
+
+
+<p>2. For the query, you will need to use ‘FoodTruck.find({ foodtype: req.params.foodtype })’ to query by foodtype.</p>
+
+
+
+
+
+
+
+<p>3. Return all retrieved objects as json to the client. </p>
+
+
+
+
+
+
+
+<p>4. Do some experimentation and add some of your own routes. Go to http://mongoosejs.com and click on Read the Docs. Look at the section on queries and figure out how creative you can get with querying your data.</p>
+
+
+
+
+
+
+
+<p>The End Result</p>
+
+
+
+
+
+
+
+<p>You should have a new route where you can pass in a food type and return all food trucks which match. Hopefully you added some of your own routes and figured out cool new ways to query your data.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

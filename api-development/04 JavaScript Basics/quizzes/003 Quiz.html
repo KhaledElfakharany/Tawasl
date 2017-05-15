@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>003 Quiz</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 5, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 1100802, "assessment_type": "multiple-choice", "created": "2016-11-14T18:29:25Z", "prompt": {"answers": ["<p>European Computer Mastery Association</p>", "<p>It\u2019s a name, not an acronym</p>", "<p>European Computer Manufacturers Association</p>", "<p>None of the Above</p>"], "question": "<p>ECMA Stands for:</p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:29:25Z", "section": "", "question_plain": "ECMA Stands for:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100808, "assessment_type": "multiple-choice", "created": "2016-11-14T18:30:23Z", "prompt": {"answers": ["<p>A specification or standard for a programming language</p>", "<p>A named container for storing values</p>", "<p>A variable numeric range</p>", "<p>A JavaScript keyword</p>"], "question": "<p>Variables are:</p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["b"], "updated": "2016-11-14T18:30:23Z", "section": "", "question_plain": "Variables are:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100812, "assessment_type": "multiple-choice", "created": "2016-11-14T18:31:27Z", "prompt": {"answers": ["<p>Ternary Operator (takes 3 operands)</p>", "<p>Binary Operator (takes 2 operands)</p>", "<p>Unary Operator (takes only 1 operand)</p>", "<p>All of the above</p>"], "question": "<p>Operators in JavaScript can be:</p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["d"], "updated": "2016-11-14T18:31:27Z", "section": "", "question_plain": "Operators in JavaScript can be:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100814, "assessment_type": "multiple-choice", "created": "2016-11-14T18:32:24Z", "prompt": {"answers": ["<p>Let you group a series of statements together to perform some task.</p>", "<p>Can be reused over and over in your code</p>", "<p>They can have properties and methods just like any other JavaScript object</p>", "<p>All of the above</p>"], "question": "<p>Functions:\u00a0</p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["d"], "updated": "2016-11-14T18:32:24Z", "section": "", "question_plain": "Functions:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100816, "assessment_type": "multiple-choice", "created": "2016-11-14T18:33:08Z", "prompt": {"answers": ["<p>By bracket notation</p>", "<p>By dot notation</p>", "<p>Both 1 and 2</p>", "<p>None of the above</p>"], "question": "<p>Object properties can be accessed:</p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:33:08Z", "section": "", "question_plain": "Object properties can be accessed:", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

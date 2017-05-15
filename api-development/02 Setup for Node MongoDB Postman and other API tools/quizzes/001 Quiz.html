@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>001 Quiz</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 5, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 1100768, "assessment_type": "multiple-choice", "created": "2016-11-14T18:14:55Z", "prompt": {"feedbacks": ["", "", "", ""], "question": "<p>Atom is:</p>", "answers": ["<p>A simple text editor like note pad or text edit that has not other features</p>", "<p>A tool for managing Node packages</p>", "<p>A full featured programmers text editor that supports third party packages</p>", "<p>A tool that lets you execute ES6 JavaScript where it is not supported.</p>"], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:14:55Z", "section": "", "question_plain": "Atom is:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100770, "assessment_type": "multiple-choice", "created": "2016-11-14T18:16:03Z", "prompt": {"feedbacks": ["", "", "", ""], "question": "<p>MongoDB is:</p>", "answers": ["<p>A package used for creating an http server</p>", "<p>A Data Buffer that can be used to connect applications to a database</p>", "<p>A NoSQL Database</p>", "<p>A fierce warrior from the EurAsian Steps</p>"], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:16:03Z", "section": "", "question_plain": "MongoDB is:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100774, "assessment_type": "multiple-choice", "created": "2016-11-14T18:17:05Z", "prompt": {"feedbacks": ["", "", "", ""], "question": "<p>NPM allows you to:\u00a0</p>", "answers": ["<p>Install Node packages</p>", "<p>Run scripts specified in <code>package.json</code>\u00a0</p>", "<p>Create a project configuration via <code>npm init</code>\u00a0</p>", "<p>All of the above</p>"], "relatedLectureIds": ""}, "correct_response": ["d"], "updated": "2016-11-14T18:17:05Z", "section": "", "question_plain": "NPM allows you to:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100776, "assessment_type": "multiple-choice", "created": "2016-11-14T18:18:17Z", "prompt": {"feedbacks": ["", "", "", ""], "question": "<p>NVM stands for:</p>", "answers": ["<p>Node Version Monitor</p>", "<p>Never Veer Manually</p>", "<p>Node Version Manager</p>", "<p>None of the above</p>"], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2016-11-14T18:18:17Z", "section": "", "question_plain": "NVM stands for:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100780, "assessment_type": "multiple-choice", "created": "2016-11-14T18:19:17Z", "prompt": {"feedbacks": ["", "", "", ""], "question": "<p>Postman is:</p>", "answers": ["<p>An api client that lets you make http requests and see results</p>", "<p>An npm package that let you use email with your node application</p>", "<p>A tool for setting up your Node/Express API project</p>", "<p>A package that sends you\u00a0 a message in the event you miss a postal delivery</p>"], "relatedLectureIds": ""}, "correct_response": ["a"], "updated": "2016-11-14T18:19:17Z", "section": "", "question_plain": "Postman is:", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

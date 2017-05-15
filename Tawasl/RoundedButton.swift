@@ -11,7 +11,12 @@ import UIKit
 class RoundedButton: UIButton {
 
     override func awakeFromNib() {
-        self.layer.cornerRadius = 70
+        layer.cornerRadius = self.frame.width/2
+        imageView?.contentMode = .scaleAspectFit
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowRadius = 5
+        layer.shadowOffset = CGSize(width: 0 , height: 2)
+        layer.shadowOpacity = 0.6
     }
 
 }

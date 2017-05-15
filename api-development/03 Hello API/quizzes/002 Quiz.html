@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>002 Quiz</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 5, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 1100782, "assessment_type": "multiple-choice", "created": "2016-11-14T18:20:50Z", "prompt": {"relatedLectureIds": "", "answers": ["<p><code>npm install packagename</code>\u00a0</p>", "<p><code>npm install \u2014save packagename</code>\u00a0</p>", "<p><code>npm i packagename</code>\u00a0</p>", "<p>All of the above</p>"], "feedbacks": ["", "", "", ""], "question": "<p>The command to install npm packages is:</p>"}, "correct_response": ["d"], "updated": "2016-11-14T18:20:50Z", "section": "", "question_plain": "The command to install npm packages is:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100786, "assessment_type": "multiple-choice", "created": "2016-11-14T18:22:05Z", "prompt": {"relatedLectureIds": "", "answers": ["<p>Initializing a new node project and creating a <code>package.json</code>\u00a0 file</p>", "<p>Initializing the npm repository so packages can be installed</p>", "<p>Starting your node application</p>", "<p>Opening an http port for use</p>"], "feedbacks": ["", "", "", ""], "question": "<p>The <code>npm init</code>\u00a0\u00a0command is used for</p>"}, "correct_response": ["a"], "updated": "2016-11-14T18:22:05Z", "section": "", "question_plain": "The npm init\u00a0\u00a0command is used for", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100788, "assessment_type": "multiple-choice", "created": "2016-11-14T18:23:13Z", "prompt": {"relatedLectureIds": "", "answers": ["<p>A framework that makes installing packages easy</p>", "<p>A popular web framework for Node.js that makes building APIs easy</p>", "<p>The JavaScript engine that allows Node.js to run on a server</p>", "<p>A version manager for Node.js installations</p>"], "feedbacks": ["", "", "", ""], "question": "<p>Express.js is:</p>"}, "correct_response": ["b"], "updated": "2016-11-14T18:23:13Z", "section": "", "question_plain": "Express.js is:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100790, "assessment_type": "multiple-choice", "created": "2016-11-14T18:24:12Z", "prompt": {"relatedLectureIds": "", "answers": ["<p>A SQL (Structured Query Language) relational database.</p>", "<p>An object mapper that sits between Node.js and a database</p>", "<p>A NoSQL Document based database</p>", "<p>A Web Framework for quickly building APIs</p>"], "feedbacks": ["", "", "", ""], "question": "<p>MongoDB is:</p>"}, "correct_response": ["c"], "updated": "2016-11-14T18:24:12Z", "section": "", "question_plain": "MongoDB is:", "related_lectures": [], "original_assessment_id": 0}, {"_class": "assessment", "id": 1100796, "assessment_type": "multiple-choice", "created": "2016-11-14T18:25:02Z", "prompt": {"relatedLectureIds": "", "answers": ["<p>Express.js</p>", "<p>NPM</p>", "<p>NVM</p>", "<p>The Chrome V8 Engine</p>"], "feedbacks": ["", "", "", ""], "question": "<p>With Node.js, you can run JavaScript code on a server thanks to:</p>"}, "correct_response": ["d"], "updated": "2016-11-14T18:25:02Z", "section": "", "question_plain": "With Node.js, you can run JavaScript code on a server thanks to:", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

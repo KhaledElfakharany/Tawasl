@@ -104,7 +104,7 @@
                                 <rect key="frame" x="95" y="421" width="185" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tU-Vt-ejJ" customClass="SmallRoundedButton" customModule="Tawasl" customModuleProvider="target">
                                 <rect key="frame" x="95" y="461" width="185" height="36"/>
@@ -113,6 +113,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIu-Q2-67b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,6 +142,11 @@
                             <constraint firstItem="czy-I9-LQh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xSe-s0-OL1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="XcN-fA-eu9" id="iIj-z3-y5u"/>
+                        <outlet property="pwdField" destination="fd3-uE-rpj" id="1tD-0g-D80"/>
+                        <outlet property="topView" destination="czy-I9-LQh" id="gbC-aV-eaV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,22 +8,26 @@
 
 import UIKit
 import FBSDKLoginKit
-import FBSDKCoreKit
 import Firebase
 
 class SignInVC: UIViewController {
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var pwdField: UITextField!
 
     @IBOutlet weak var topView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func firebaseAuth( _ credential: FIRAuthCredential) {
+        FIRAuth.auth()?.signIn(with: credential){ (user,error) in
+            if error != nil {
+                print("Khaled:  Unable to authonticate with FireBase - \(String(describing: error))")
+            }else {
+                print("Khaled: Successfully authenticated with FireBase")
+            }
+        }
     }
-
 
     @IBAction func facebookBtnPressed(_ sender: Any) {
         let facebookLogin = FBSDKLoginManager()
@@ -41,13 +45,21 @@ class SignInVC: UIViewController {
         }
     }
     
-    func firebaseAuth( _ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential){ (user,error) in
-            if error != nil {
-                print("Khaled:  Unable to authonticate with FireBase - \(String(describing: error))")
-            }else {
-                print("Khaled: Successfully authenticated with FireBase")
-            }
+    @IBAction func signInPressed(_ sender: Any) {
+        if let email = emailField.text, let pw = pwdField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pw, completion: { (user,error) in
+                if error == nil {
+                    print("Khaled: Email authenticated with Firebase")
+                }else{
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pw, completion: { (user,error) in
+                        if error != nil {
+                            print("Khaled: somthing wrong with email or password")
+                        }else {
+                            print("Khaled: Successfuly signed up")
+                        }
+                    })
+                }
+            })
         }
     }
 }

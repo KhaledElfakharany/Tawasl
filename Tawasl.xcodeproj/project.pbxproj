@@ -14,6 +14,10 @@
 		95240E931EB2171B00883C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95240E911EB2171B00883C31 /* LaunchScreen.storyboard */; };
 		95240E9E1EB2171B00883C31 /* TawaslTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95240E9D1EB2171B00883C31 /* TawaslTests.swift */; };
 		95240EA91EB217BA00883C31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95240EA81EB217BA00883C31 /* GoogleService-Info.plist */; };
+		9547C7931ECDE747000E98A2 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547C7921ECDE747000E98A2 /* ContentScreen.swift */; };
+		9547C7971ECDEA89000E98A2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9547C7961ECDEA89000E98A2 /* SWRevealViewController.m */; };
+		9547C7991ECDEB40000E98A2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547C7981ECDEB40000E98A2 /* HomeVC.swift */; };
+		9547C79B1ECDED5B000E98A2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547C79A1ECDED5B000E98A2 /* Menu.swift */; };
 		9552F9F91EB22F1300E26D93 /* ViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9F81EB22F1300E26D93 /* ViewShadow.swift */; };
 		9552F9FE1EB232B100E26D93 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9FD1EB232B100E26D93 /* DropShadow.swift */; };
 		9552FA001EB236D300E26D93 /* Ristella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9552F9FF1EB236D300E26D93 /* Ristella.ttf */; };
@@ -48,6 +52,12 @@
 		95240E9F1EB2171B00883C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95240EA81EB217BA00883C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		954591201EC9F6C000029F39 /* Tawasl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tawasl.entitlements; sourceTree = "<group>"; };
+		9547C7921ECDE747000E98A2 /* ContentScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
+		9547C7941ECDEA88000E98A2 /* Tawasl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tawasl-Bridging-Header.h"; sourceTree = "<group>"; };
+		9547C7951ECDEA89000E98A2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../../Desktop/SWRevealViewControllers/SWRevealViewController.h; sourceTree = "<group>"; };
+		9547C7961ECDEA89000E98A2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../../../Desktop/SWRevealViewControllers/SWRevealViewController.m; sourceTree = "<group>"; };
+		9547C7981ECDEB40000E98A2 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9547C79A1ECDED5B000E98A2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		9552F9F81EB22F1300E26D93 /* ViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShadow.swift; sourceTree = "<group>"; };
 		9552F9FD1EB232B100E26D93 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		9552F9FF1EB236D300E26D93 /* Ristella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ristella.ttf; sourceTree = "<group>"; };
@@ -122,6 +132,9 @@
 			children = (
 				95240E881EB2171B00883C31 /* AppDelegate.swift */,
 				95240E8A1EB2171B00883C31 /* SignInVC.swift */,
+				9547C7921ECDE747000E98A2 /* ContentScreen.swift */,
+				9547C7981ECDEB40000E98A2 /* HomeVC.swift */,
+				9547C79A1ECDED5B000E98A2 /* Menu.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -159,6 +172,9 @@
 			children = (
 				95240EA81EB217BA00883C31 /* GoogleService-Info.plist */,
 				95240E941EB2171B00883C31 /* Info.plist */,
+				9547C7951ECDEA89000E98A2 /* SWRevealViewController.h */,
+				9547C7961ECDEA89000E98A2 /* SWRevealViewController.m */,
+				9547C7941ECDEA88000E98A2 /* Tawasl-Bridging-Header.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 					95240E841EB2171B00883C31 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = K7K283J3YP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -352,6 +369,10 @@
 			files = (
 				95240E8B1EB2171B00883C31 /* SignInVC.swift in Sources */,
 				9552FA021EB23BAE00E26D93 /* RoundedButton.swift in Sources */,
+				9547C7931ECDE747000E98A2 /* ContentScreen.swift in Sources */,
+				9547C7991ECDEB40000E98A2 /* HomeVC.swift in Sources */,
+				9547C79B1ECDED5B000E98A2 /* Menu.swift in Sources */,
+				9547C7971ECDEA89000E98A2 /* SWRevealViewController.m in Sources */,
 				95240E891EB2171B00883C31 /* AppDelegate.swift in Sources */,
 				9552FA041EB27C8D00E26D93 /* SmallRoundedButton.swift in Sources */,
 				9552F9FE1EB232B100E26D93 /* DropShadow.swift in Sources */,
@@ -497,11 +518,14 @@
 			baseConfigurationReference = 2182633F175716C7175762C0 /* Pods-Tawasl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K7K283J3YP;
 				INFOPLIST_FILE = Tawasl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.Tawasl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tawasl/Tawasl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -511,11 +535,13 @@
 			baseConfigurationReference = 51E0F907CC9004BE2E4A6CB8 /* Pods-Tawasl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K7K283J3YP;
 				INFOPLIST_FILE = Tawasl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.Tawasl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tawasl/Tawasl-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

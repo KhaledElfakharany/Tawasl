@@ -25,14 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-//        if let currentUser = FIRAuth.auth()?.currentUser {
-//            print("Khaled: \(currentUser.email!)\n")
-//            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "secondScreen") as UIViewController
-//            self.window = UIWindow(frame: UIScreen.main.bounds)
-//            self.window?.rootViewController = initialViewControlleripad
-//            self.window?.makeKeyAndVisible()
-//        }
+        if let currentUser = FIRAuth.auth()?.currentUser {
+            print("Khaled: \(currentUser.email!)\n")
+            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "ContentScreen") as UIViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+            print("Khaled: \((currentUser.uid))")
+        }
         
         return true
     }

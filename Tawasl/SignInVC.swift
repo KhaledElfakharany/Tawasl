@@ -40,6 +40,7 @@ class SignInVC: UIViewController {
                 print("Khaled: Successfully authenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
+                print("KHALED: \((FIRAuth.auth()?.currentUser?.displayName)!)")
             }
             
         }
@@ -50,6 +51,14 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pw, completion: { (user,error) in
                 if error == nil {
                     print("Khaled: Email authenticated with Firebase")
+//                    let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+//                    changeRequest?.displayName = "Khaloda"
+//                    changeRequest?.commitChanges() { (error) in
+//                        // ...
+//                    }
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContentScreen") as! SWRevealViewController
+                    self.present(vc, animated: true, completion: nil)
+                    print("KHALED: \((user?.displayName)!)")
                 }else{
                     FIRAuth.auth()?.createUser(withEmail: email, password: pw, completion: { (user,error) in
                         if error != nil {
